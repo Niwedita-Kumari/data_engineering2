@@ -1,0 +1,31 @@
+{
+  "merchants": [
+    {
+      "merchant_id": "M001",
+      "name": "BookDepot",
+      "category": "Books",
+      "location": "New York",
+      "commission_rate": 0.08,
+      "avg_rating": null,
+      "total_volume": 125000.50
+    },
+    {
+      "merchant_id": "M002",
+      "name": "GroceryWorld",
+      "category": "Grocery",
+      "location": "Los Angeles",
+      "commission_rate": null,
+      "avg_rating": 4.3,
+      "total_volume": 450000.75
+    },
+    {
+      "merchant_id": "M003",
+      "name": "ElectroMart",
+      "category": "Electronics",
+      "location": "Chicago",
+      "commission_rate": 0.12,
+      "avg_rating": 4.1,
+      "total_volume": 98000.20
+    }
+  ]
+}

@@ -1,60 +1,27 @@
--- Products Data
+-- Customers CSV Data having null email and phone having PK as customer_id
 
-product_id product_name category price
+customer_id,name,email,phone,city,account_balance,join_date,risk_score
+CUST001,Alice Johnson,alice.j@email.com,+1-555-1001,New York,2450.75,2024-01-15,2.3
+CUST002,Bob Wilson,,+1-555-1002,Los Angeles,1890.20,2023-11-20,1.8
+CUST003,Carol Davis,carol.d@email.com,,Chicago,3200.50,2024-03-10,3.1
+CUST004,David Lee,david.l@email.com,+1-555-1004,Houston,1120.80,2023-09-05,1.2
+CUST005,Eva Martinez,,+1-555-1005,Miami,2750.30,2024-02-28,2.7
+CUST006,Frank Garcia,frank.g@email.com,,Seattle,980.90,2023-12-12,0.9
+CUST007,Grace Taylor,grace.t@email.com,+1-555-1007,Phoenix,4100.25,2024-05-01,1.5
+CUST008,Hank Brown,,+1-555-1008,Boston,1670.60,2023-10-18,2.9
+CUST009,Ivy Kim,ivy.k@email.com,,Denver,2300.40,2024-04-22,1.1
+CUST010,Jack Patel,jack.p@email.com,+1-555-1010,Atlanta,1450.15,2023-08-30,2.4
 
-Wireless Mouse Electronics 799.99
-Bluetooth Speaker Electronics 1299.49
-Yoga Mat Fitness 499.00
-Laptop Stand Accessories 999.99
-Notebook Set Stationery 149.00
-Water Bottle Fitness 299.00
-Smartwatch Electronics 4999.00
-Desk Organizer Accessories 399.00
-Dumbbell Set Fitness 1999.00
-Pen Drive 32GB Electronics 599.00
+-- Transactions CSV Data having missing merchant and amount values having FK as customer_id
 
--- Stores Data
-
-store_id store_name location
-
-1 City Mall Store Mumbai
-2 High Street Store Delhi
-3 Tech World Outlet Bangalore
-4 Downtown Mini Store Pune
-5 Mega Plaza Chennai
-
-
--- Transactions Data
-
-transaction_id customer_id product_id store_id quantity transaction_date
-
-1 127 8 4 4 2025-03-31
-2 105 3 4 5 2024-11-12
-3 116 2 2 3 2025-05-01
-4 120 8 1 1 2024-11-02
-5 105 5 2 1 2025-03-17
-6 110 7 3 5 2025-01-04
-7 110 7 2 5 2025-01-01
-8 126 7 5 2 2025-06-08
-9 123 1 3 2 2024-10-08
-10 124 2 2 5 2024-08-27
-11 102 1 3 2 2024-08-11
-12 108 5 1 4 2025-05-26
-13 104 3 3 4 2025-05-04
-14 120 1 4 5 2024-07-17
-15 121 6 5 5 2025-05-19
-16 118 6 2 4 2024-11-29
-17 109 8 5 5 2024-07-10
-18 103 1 4 3 2024-09-05
-19 116 8 4 4 2024-07-14
-20 130 5 1 2 2024-07-30
-21 105 1 3 5 2024-10-02
-22 107 9 3 4 2024-11-16
-23 122 9 4 2 2025-04-30
-24 125 1 5 1 2024-07-14
-25 116 8 4 5 2024-12-13
-26 126 6 2 2 2024-09-21
-27 127 8 1 1 2024-10-10
-28 101 7 5 3 2024-11-15
-29 119 9 4 2 2025-06-03
-30 116 8 4 5 2025-03-16
+transaction_id,customer_id,amount,merchant,transaction_date,payment_method,status,fraud_flag
+TXN001,CUST001,89.50,BookDepot,2025-12-01 14:30,Debit Card,SUCCESS,FALSE
+TXN002,CUST002,245.75,,2025-12-02 09:15,Credit Card,PENDING,FALSE
+TXN003,CUST003,,ElectroMart,2025-12-03 18:45,Mobile Wallet,FAILED,TRUE
+TXN004,CUST004,420.00,FashionHub,2025-12-04 11:20,Cash,SUCCESS,FALSE
+TXN005,CUST005,23.99,,2025-12-05 16:10,Debit Card,SUCCESS,FALSE
+TXN006,CUST006,12.99,StreamPlus,2025-12-06 20:05,Credit Card,SUCCESS,FALSE
+TXN007,CUST007,,AutoZone,2025-12-07 12:45,Cash,SUCCESS,FALSE
+TXN008,CUST008,67.50,PharmaCare,2025-12-08 17:22,Mobile Wallet,REFUNDED,FALSE
+TXN009,CUST009,890.30,,2025-12-09 08:10,Debit Card,SUCCESS,FALSE
+TXN010,CUST010,45.80,GameZone,2025-12-10 15:35,Credit Card,SUCCESS,FALSE
