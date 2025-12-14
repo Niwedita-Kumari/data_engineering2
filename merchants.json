@@ -6,7 +6,7 @@
       "category": "Books",
       "location": "New York",
       "commission_rate": 0.08,
-      "avg_rating": null,
+      "avg_rating": 5,
       "total_volume": 125000.50
     },
     {
@@ -14,7 +14,7 @@
       "name": "GroceryWorld",
       "category": "Grocery",
       "location": "Los Angeles",
-      "commission_rate": null,
+      "commission_rate": 0.67,
       "avg_rating": 4.3,
       "total_volume": 450000.75
     },
@@ -26,6 +26,41 @@
       "commission_rate": 0.12,
       "avg_rating": 4.1,
       "total_volume": 98000.20
+    },
+    {
+      "merchant_id": "M002",
+      "name": "GroceryWorld",
+      "category": "Grocery",
+      "location": "Los Angeles",
+      "commission_rate": 0.98,
+      "avg_rating": 4.3,
+      "total_volume": 450000.75
+    },
+     {
+      "merchant_id": "M002",
+      "name": "GroceryWorld",
+      "category": "Grocery",
+      "location": "Los Angeles",
+      "commission_rate": 1.2,
+      "avg_rating": 4.3,
+      "total_volume": 450000.75
+    },{
+      "merchant_id": "M002",
+      "name": "GroceryWorld",
+      "category": "Grocery",
+      "location": "Los Angeles",
+      "commission_rate": 0.98,
+      "avg_rating": 4.3,
+      "total_volume": 450000.75
+    },
+    {
+      "merchant_id": "M002",
+      "name": "GroceryWorld",
+      "category": "Grocery",
+      "location": "Los Angeles",
+      "commission_rate": 0.98,
+      "avg_rating": 4.3,
+      "total_volume": 450000.75
     }
   ]
 }
