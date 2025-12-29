@@ -89,7 +89,7 @@ from pyspark.sql.functions import sum, countDistinct, avg
 
 gold_df = silver_df.groupBy("name","customer_id","transaction_date","payment_method","merchant","merchant_id","location")
     .agg(avg(risk_score*avg_rating).alias("fraud_score"),
-    sum(account_balance-amount).alias("total_customer_amount_balance"),
+    sum(account_balance-amount).alias("Remaining_customer_amount_balance"),
     countDistinct("transaction_id").alias("number_of_transactions"),
     avg(amount).alias("average_transaction_value"))
 
