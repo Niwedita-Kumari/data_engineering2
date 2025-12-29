@@ -19,14 +19,7 @@ This repository contains the complete code and resources for a **production-grad
 
 ## 🏗️ Architecture Overview
 
-Raw Data Sources (CSV/json) ->
-Azure Data Factory (Ingestion) ->
-ADLS Gen2 (Bronze Layer - Raw) ->
-Azure Databricks (PySpark) ->
-1. Bronze → Silver (Cleansed) --->
-2. Silver → Gold (Aggregated) ->
-Azure SQL Database (Star Schema) ->
-Power BI (Dashboards)
+Raw Data Sources (CSV/json) -> Azure Data Factory (Ingestion) ->ADLS Gen2 (Bronze Layer - Raw) ->Azure Databricks (PySpark)(1. Bronze → Silver (Cleansed)) -> (2. Silver → Gold (Aggregated)) ->Azure SQL Database (Star Schema) ->Power BI (Dashboards)
 
 ---
 
