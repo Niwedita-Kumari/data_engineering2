@@ -1,6 +1,6 @@
 # Data Engineering Project - Medallion Architecture -  ADF - Databricks - POWER BI
 
-***Implement **Medallion Architecture** using **Azure Data Factory (ADF)**, **Azure Databricks**, **ADLS Gen2**, **Azure SQL**, and **Power BI**.
+Implement **Medallion Architecture** using **Azure Data Factory (ADF)**, **Azure Databricks**, **ADLS Gen2**, **Azure SQL** and **Power BI**.
 
 ---
 
@@ -19,18 +19,13 @@ This repository contains the complete code and resources for a **production-grad
 
 ## 🏗️ Architecture Overview
 
-Raw Data Sources (CSV/json)
-↓
-Azure Data Factory (Ingestion)
-↓
-ADLS Gen2 (Bronze Layer - Raw)
-↓
-Azure Databricks (PySpark)
-├── Bronze → Silver (Cleansed)
-├── Silver → Gold (Aggregated)
-↓
-Azure SQL Database (Star Schema)
-↓
+Raw Data Sources (CSV/json) ->
+Azure Data Factory (Ingestion) ->
+ADLS Gen2 (Bronze Layer - Raw) ->
+Azure Databricks (PySpark) ->
+| Bronze → Silver (Cleansed) |
+| Silver → Gold (Aggregated) |
+Azure SQL Database (Star Schema) ->
 Power BI (Dashboards)
 
 ---
@@ -49,24 +44,23 @@ Power BI (Dashboards)
 
 ## 📁 Project Structure
 
-azure-data-engineer-multi-source/
-├── /data/
-│ ├── raw/ # Bronze layer (ingested files)
-│ ├── silver/ # Cleansed & validated data
-│ └── gold/ # Aggregated business tables
-├── /databricks/
-│ ├── bronze/ # Raw data processing
-│ ├── silver/ # Data cleansing & validation
-│ └── gold/ # Business logic & aggregations
-├── /adf/
-│ ├── pipelines/ # ADF pipeline JSON
-│ └── linked-services/ # Connection configs
-├── /sql/
-│ ├── dim_tables.sql # Dimension tables
-│ └── fact_tables.sql # Fact tables
-├── /powerbi/
-│ └── dashboard.pbix # Power BI report
-└── README.md
+1. data
+- raw # Bronze layer (ingested files)
+- silver # Cleansed & validated data
+- gold # Aggregated business tables
+2. databricks
+- bronze # Raw data processing
+- silver # Data cleansing & validation
+- gold # Business logic & aggregations
+3. adf
+- pipelines # ADF pipeline JSON
+- linked-services # Connection configs
+4. sql
+- dim_tables.sql # Dimension tables
+- fact_tables.sql # Fact tables
+5. powerbi 
+- dashboard.pbix # Power BI report
+6. README.md
 
 ---
 
