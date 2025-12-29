@@ -23,8 +23,8 @@ Raw Data Sources (CSV/json) ->
 Azure Data Factory (Ingestion) ->
 ADLS Gen2 (Bronze Layer - Raw) ->
 Azure Databricks (PySpark) ->
-| Bronze → Silver (Cleansed) |
-| Silver → Gold (Aggregated) |
+1. Bronze → Silver (Cleansed) --->
+2. Silver → Gold (Aggregated) ->
 Azure SQL Database (Star Schema) ->
 Power BI (Dashboards)
 
@@ -44,21 +44,21 @@ Power BI (Dashboards)
 
 ## 📁 Project Structure
 
-1. data
+1. Data
 - raw # Bronze layer (ingested files)
 - silver # Cleansed & validated data
 - gold # Aggregated business tables
-2. databricks
+2. Databricks
 - bronze # Raw data processing
 - silver # Data cleansing & validation
 - gold # Business logic & aggregations
-3. adf
+3. ADF
 - pipelines # ADF pipeline JSON
 - linked-services # Connection configs
-4. sql
+4. SQL
 - dim_tables.sql # Dimension tables
 - fact_tables.sql # Fact tables
-5. powerbi 
+5. POWER BI
 - dashboard.pbix # Power BI report
 6. README.md
 
