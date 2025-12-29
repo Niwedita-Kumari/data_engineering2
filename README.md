@@ -1,4 +1,4 @@
-# Data Engineering Project - Medallion Architecture -  ADF - DATABRICKS - POWER BI
+# Data Engineering Project - Medallion Architecture -  ADF - Databricks - POWER BI
 
 ***Implement **Medallion Architecture** using **Azure Data Factory (ADF)**, **Azure Databricks**, **ADLS Gen2**, **Azure SQL**, and **Power BI**.
 
